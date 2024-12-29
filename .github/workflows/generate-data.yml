@@ -22,3 +22,8 @@ jobs:
 
       - name: Run script
         run: python script.py
+
+      - name: Push data to Google Sheets
+        run: python push_to_sheets.py
+        env:
+          GCP_SERVICE_ACCOUNT: ${{ secrets.GCP_SERVICE_ACCOUNT }}
