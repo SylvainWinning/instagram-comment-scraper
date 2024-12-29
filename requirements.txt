@@ -1,0 +1,6 @@
+selenium==4.1.0
+tqdm==4.62.3
+PyYAML==6.0
+transformers==4.18.0
+torch==1.11.0
+langdetect==1.0.9
