@@ -4,3 +4,7 @@ PyYAML==6.0
 transformers==4.18.0
 torch==1.11.0
 langdetect==1.0.9
+gspread
+google-auth
+google-auth-oauthlib
+google-auth-httplib2
