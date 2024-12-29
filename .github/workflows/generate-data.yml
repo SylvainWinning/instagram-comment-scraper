@@ -17,11 +17,16 @@ jobs:
         with:
           python-version: '3.9'
 
+      - name: Install Chrome
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y chromium-browser chromium-driver
+
       - name: Install dependencies
         run: pip install -r requirements.txt
 
       - name: Run script
-        run: python script.py
+        run: python scrape_analyze.py
 
       - name: Push data to Google Sheets
         run: python push_to_sheets.py
